@@ -3,10 +3,10 @@
   <Target Name="Build">
 
     <ItemGroup>
-      <ProjectToBuild Include="NUnitTestProject.sln">
+      <ProjectToBuild Include="**\*.*proj">
       </ProjectToBuild>
     </ItemGroup>
-    <MSBuild Projects="@(ProjectToBuild)"
+    <MSBuild Projects="@(ProjectToBuild)" Targets="Build"
       Properties="Configuration=Debug"/>
   </Target>
   <Target Name="RunTests">
