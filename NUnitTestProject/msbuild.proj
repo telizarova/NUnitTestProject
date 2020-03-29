@@ -3,7 +3,7 @@
   <Target Name="Build">
 
     <ItemGroup>
-      <ProjectToBuild Include="*.csproj">
+      <ProjectToBuild Include="NUnitTestProject.csproj">
       </ProjectToBuild>
     </ItemGroup>
     <MSBuild Projects="@(ProjectToBuild)" Targets="Build"
